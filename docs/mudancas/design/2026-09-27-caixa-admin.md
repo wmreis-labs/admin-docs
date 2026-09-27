@@ -2,7 +2,7 @@
 
 **Status:** vigente
 **Data:** 2026-09-27
-**ADR:** [admin e ingestão](https://wmreis-labs.github.io/wmreis-docs/mudancas/adr/2026-09-27-admin-e-ingestao/)
+**ADR:** [fase 1 do caixa](https://wmreis-labs.github.io/wmreis-docs/mudancas/adr/2026-09-27-fase-1-caixa/)
 **PRD:** [caixa pessoal e profissional](https://wmreis-labs.github.io/wmreis-docs/mudancas/prd/2026-09-27-caixa-pessoal-profissional/)
 
 ## Objetivo
@@ -25,10 +25,10 @@ Login, layout autenticado e o cliente `admin/src/services/api/baseApi.ts` perman
 
 | Tela | O que a pessoa faz | Fase |
 | --- | --- | --- |
-| Painel | Vê, por livro e no consolidado, receita real, despesa real, resultado, transferências, aportes e a série dos meses | 1, e a reserva na fase 3 |
-| Contas | Cadastra as quatro contas e o livro de cada uma. Inter aparece como coleta automática | 1 |
-| Extrato | Envia OFX ou CSV. Mostra o que já entrou e o que foi para revisão, inclusive PDF | 1. Drive e Gmail aparecem como origem na fase 2 |
-| Revisão | Escolhe despesa, receita, transferência ou aporte. Se for transferência, liga a contrapartida | 1 |
+| Painel | Vê, por livro e no consolidado, receita real, despesa real, resultado e a série dos meses. Interno, retirada, fatura, investimento, patrimonial e empréstimo aparecem ao lado | 1, e a reserva na fase 3 |
+| Contas | Cadastra conta corrente e cartão nos livros Milton, TESTTO e WMREIS. As contas Inter da TESTTO e da WMREIS aparecem como coleta automática | 1 |
+| Extrato | Envia OFX, CSV ou PDF. Mostra o que já entrou e o que foi para revisão | 1. Drive e Gmail aparecem como origem na fase 2 |
+| Revisão | Escolhe um dos tipos do importador. Confirmar grava a regra pela descrição | 1 |
 | Lançamento | Lança à mão receita, despesa, transferência ou aporte, com data de competência | 1 |
 | Contas a vencer | Vê o previsto que ainda não casou com o extrato | 2 |
 | Plano de reserva | Vê meta, reserva atual, quanto falta, aportes e sobra investível | 3 |
