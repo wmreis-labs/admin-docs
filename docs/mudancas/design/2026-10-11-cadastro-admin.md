@@ -9,7 +9,7 @@ A rota `/register` do admin mostra o mesmo formulário de cadastro do Hostto. A 
 
 ## Fora deste desenho
 
-Login, confirmação do código e o serviço que grava o usuário ficam como estão. Esta tela não cria pessoa, imóvel nem permissão.
+Login e confirmação do código ficam como estão. Esta tela não cria pessoa, imóvel nem permissão. Nome, telefone e documento seguem no cadastro e ficam nos atributos do usuário, no desenho [atributos do cadastro](https://wmreis-labs.github.io/airtestto-docs/mudancas/design/2026-10-11-atributos-cadastro/).
 
 ## Onde entra
 
