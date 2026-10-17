@@ -30,10 +30,10 @@ Login, layout autenticado e o cliente `admin/src/services/api/baseApi.ts` perman
 | Extrato | Envia OFX, CSV ou PDF. Mostra o que já entrou e o que foi para revisão | 1. Drive e Gmail aparecem como origem na fase 2 |
 | Revisão | Escolhe um dos tipos do importador. Confirmar grava a regra pela descrição | 1 |
 | Lançamento | Lança à mão receita, despesa, transferência ou aporte, com data de competência | 1 |
-| Contas a vencer | Vê o previsto que ainda não casou com o extrato | 2 |
+| Contas a vencer | Confirma rotina ou avulso, dá baixa, encerra ou ajusta dia e valor. O sino da barra abre o recorte do dia | Primeiro corte. O detalhe está em [Lembrete](2026-10-17-lembrete-admin.md) |
 | Plano de reserva | Vê meta, reserva atual, quanto falta, aportes e sobra investível | 3 |
 
-A fase 1 já responde se o mês melhorou. Drive, Gmail e o plano de reserva não bloqueiam essa tela.
+O painel responde se o mês melhorou e não bloqueia o lembrete. O lembrete também não espera o painel. Drive e o plano de reserva continuam nos cortes seguintes.
 
 ## Estados
 
