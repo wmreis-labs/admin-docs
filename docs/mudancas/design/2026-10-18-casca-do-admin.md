@@ -1,6 +1,6 @@
 # Design: casca do admin
 
-**Status:** proposta
+**Status:** vigente
 **Data:** 2026-10-18
 **RFC:** [menu e layout do admin](https://wmreis-labs.github.io/wmreis-docs/mudancas/rfc/2026-10-18-menu-do-admin/)
 **PRD:** [console do admin](https://wmreis-labs.github.io/wmreis-docs/mudancas/prd/2026-10-18-console-do-admin/)
@@ -11,7 +11,7 @@ Organizar o menu e a entrada do admin. A pessoa vê Administração e Caixa como
 
 ## Fora deste desenho
 
-Usuários, grupos, tenants e logs têm o corte deles mais abaixo e ainda não são tarefa. Extrato, revisão e lançamento continuam no desenho [Caixa](2026-09-27-caixa-admin.md). O Hostto e o Zé Salgados não recebem este menu.
+Extrato, revisão e lançamento continuam no desenho [Caixa](2026-09-27-caixa-admin.md). O Hostto e o Zé Salgados não recebem este menu.
 
 ## Onde entra
 
@@ -68,7 +68,7 @@ A tela lista nome e situação. Incluir pede nome. Alterar muda nome ou situaç�
 
 ## Logs
 
-A tela lista os eventos de auditoria em ordem de chegada, com data, quem fez e o que a API descreveu. Sem filtro que a API não ofereça. Vazio diz que não há evento.
+A tela pede a referência que a API exige e lista os eventos dessa referência, em ordem de chegada. Cada linha mostra a data, o tipo e o domínio que a API devolveu. Sem outro filtro. Sem referência, a tela não consulta. Sem evento, diz que não há evento.
 
 ## Estados
 
