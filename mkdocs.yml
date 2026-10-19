@@ -66,6 +66,7 @@ nav:
       - mudancas/index.md
       - Design docs:
           - mudancas/design/index.md
+          - Casca: mudancas/design/2026-10-18-casca-do-admin.md
           - Caixa: mudancas/design/2026-09-27-caixa-admin.md
           - Lembrete: mudancas/design/2026-10-17-lembrete-admin.md
           - Conta: mudancas/design/2026-10-18-conta-bank-admin.md

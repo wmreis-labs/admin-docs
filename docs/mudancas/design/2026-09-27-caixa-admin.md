@@ -15,9 +15,9 @@ Parser de OFX e CSV, pareamento, livros e a fórmula do mês ficam no backend. O
 
 ## Onde entra
 
-O menu principal hoje é Dashboard (`/dashboard`), Aplicativos (`/apps`), Usuários (`/users`), Grupos (`/groups`), Tenants (`/tenants`) e Logs (`/logs`). Configurações continua em `/settings`.
+O menu principal hoje é uma lista única: Dashboard (`/dashboard`), Aplicativos (`/apps`), Usuários (`/users`), Grupos (`/groups`), Tenants (`/tenants`), Logs (`/logs`), Painel, Contas e Contas a vencer. Configurações continua em `/settings`.
 
-O módulo entra como mais um item desse menu, com o rótulo Caixa. A rota proposta é `/financeiro`. Ela não está travada num ADR: se o caminho mudar, este desenho é que se atualiza.
+O agrupamento desse menu está proposto em [Casca do admin](2026-10-18-casca-do-admin.md). As rotas já publicadas permanecem: `/financeiro/painel`, `/financeiro/contas` e `/financeiro/vencer`. A rota `/financeiro` não está travada num ADR.
 
 Login, layout autenticado e o cliente `admin/src/services/api/baseApi.ts` permanecem. Toda chamada manda `Authorization` e `x-tenant` para `REACT_APP_API_URL`.
 
