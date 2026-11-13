@@ -64,7 +64,7 @@ A tela lista os grupos e quem está em cada um. A edição do vínculo continua 
 
 ## Tenants
 
-A tela lista nome e situação. Incluir pede nome. Alterar muda nome ou situação. Excluir pede confirmação. A tela mostra o que a API gravou. Não troca o tenant da sessão aberta.
+A tela lista id, nome, situação, plano de cobrança, metadata e a data de criação que a API devolveu. Empresa com situação excluída não aparece. Incluir pede o nome. Id, plano de cobrança e metadata são opcionais. O id informado fica em minúsculas, com letras, números e hífen. Sem id, a tela não envia id. Alterar grava só nome, plano de cobrança, metadata ou situação que mudaram. Excluir pede confirmação e a linha some. A tela mostra o que a API gravou. Não troca o tenant da sessão aberta. Não há campo para o plano do ATO.
 
 ## Logs
 
