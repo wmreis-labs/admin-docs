@@ -15,24 +15,19 @@ O caixa continua no login que já existe. Esta área usa outra sessão.
 
 | Rota | Quem entra | O que mostra |
 | --- | --- | --- |
-| `/identidade/acesso` | Público desta área | E-mail e senha. Sem link de cadastro |
-| `/identidade` | Operador com sessão desta área | Os três sistemas, a fila e os ativos |
+| `/identidade` | Quem já entrou no admin | O convite: e-mail da pessoa, o sistema e o tenant que recebe o acesso. A lista mostra o tenant de cada pessoa |
 
-O menu do caixa ganha o grupo Identidade, item Acessos, no caminho `/identidade`. Quem já entrou no caixa vê o atalho. Quem só tem o pool da plataforma usa a barra desta área, com Sair. Se a sessão do caixa também estiver aberta, a barra mostra Caixa.
+O menu do caixa ganha o grupo Identidade, item Acessos, no caminho `/identidade`.
 
 ## Entrada
 
-O texto diz que o acesso é por convite e que o primeiro login troca a senha temporária. Não há botão cadastrar, confirmar conta nem esqueci a senha.
-
-Se o pool pedir a troca da senha temporária, a mesma tela pede a nova senha e a confirmação. A senha precisa de 8 caracteres, com maiúscula, minúscula e número. As duas têm de coincidir. Sem essa troca, a área não abre.
-
-Conta sem o grupo de operador da plataforma não grava sessão. A mensagem fica na tela.
+Quem abre Acessos pelo menu do admin informa o e-mail da pessoa, o sistema e o tenant que o convite libera. A sessão já aberta do admin envia o convite. Esta tela não pede outra senha.
 
 ## Sistemas
 
 A escolha vem de `GET /admin/systems`: nome, papéis, papéis que podem omitir tenant e atributos. A tela não inventa papel.
 
-Um convite abre o sistema escolhido. O mesmo e-mail em outro sistema é outro convite.
+Um convite abre o sistema da aba. O campo Sistema não se repete no formulário. O tenant é a empresa do caixa, gravada em `custom:tenant`. O nome da empresa pode coincidir com o de um produto. O mesmo e-mail em outro sistema é outro convite.
 
 ## Pendentes
 
@@ -46,10 +41,10 @@ Ajustar grava papel e tenant quando mudaram. Desativar, reativar e nova senha pe
 
 ## Estados
 
-- **Sem sessão.** `/identidade` volta para `/identidade/acesso`.
+- **Catálogo indisponível.** O convite continua na tela, com Hostto, ATO e Zé Salgados para escolher o sistema.
 - **Fila vazia.** Diz que ninguém aguarda aprovação.
 - **Sem ativo.** Diz que quem foi aprovado aparece ali.
-- **Erro.** A mensagem de `error.message` fica na tela. A sessão inválida volta para o acesso.
+- **Erro.** A mensagem de `error.message` fica na tela.
 - **Sucesso.** Snackbar com o que a ação fez.
 
 ## Fora deste desenho
