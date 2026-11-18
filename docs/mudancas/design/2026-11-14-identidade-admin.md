@@ -21,7 +21,7 @@ O menu do caixa ganha o grupo Identidade, item Acessos, no caminho `/identidade`
 
 ## Entrada
 
-Quem abre Acessos pelo menu do admin informa o e-mail da pessoa, o sistema e o tenant que o convite libera. A sessão já aberta do admin envia o convite. Esta tela não pede outra senha.
+A sessão que envia o convite passou para [Menu por grupo](2026-11-18-menu-por-grupo.md) em 2026-11-18. Sem a sessão de operador, Acessos pede esse login. O convite continua pedindo e-mail, sistema e tenant.
 
 ## Sistemas
 
