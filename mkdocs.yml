@@ -72,6 +72,7 @@ nav:
           - Conta: mudancas/design/2026-10-18-conta-bank-admin.md
           - Cadastro: mudancas/design/2026-10-11-cadastro-admin.md
           - Identidade: mudancas/design/2026-11-14-identidade-admin.md
+          - Chaves: mudancas/design/2026-11-25-chaves.md
 
 extra:
   social:

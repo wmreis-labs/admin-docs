@@ -9,3 +9,4 @@
 | Conta | Vigente | [Conta](2026-10-18-conta-bank-admin.md) |
 | Cadastro | Vigente | [Cadastro](2026-10-11-cadastro-admin.md) |
 | Identidade | Vigente | [Identidade](2026-11-14-identidade-admin.md) |
+| Chaves | Vigente | [Chaves](2026-11-25-chaves.md) |
